@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clock</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .main {
+        max-width: 100%;
+        min-height: 100vh;
+
+        background: rgb(179, 175, 175);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .clock_box {
+        width: 600px;
+        height: 300px;
+
+        background: linear-gradient(
+          rgb(223, 137, 137) 0%,
+          rgb(245, 155, 92) 30%,
+          rgb(222, 178, 82) 60%,
+          rgb(84, 208, 236) 100%
+        );
+
+        box-shadow: 10px 10px 9px 1px rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        transition: all 2s ease;
+      }
+      .clock {
+        font-size: 5.5rem;
+
+        text-shadow: 1px 1px 5px rgb(17, 17, 17), 2px 2px 5px rgb(20, 19, 19),
+          3px 3px 5px rgb(30, 29, 29), 4px 4px 5px rgb(32, 30, 30),
+          5px 5px 5px rgb(52, 51, 51), 6px 6px 5px rgb(34, 32, 32),
+          7px 7px 5px rgb(30, 28, 28), 8px 8px 5px rgb(4, 4, 4),
+          9px 9px 5px rgb(31, 30, 30), 10px 10px 5px rgb(1, 1, 1);
+
+        transition: all 2s ease;
+      }
+      @media (min-width: 750px) {
+        .clock_box {
+          width: 800px;
+          height: 500px;
+        }
+      }
+      @media (max-width: 550px) {
+        .clock_box {
+          width: 400px;
+          height: 150px;
+        }
+        .clock {
+          font-size: 3rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="clock_box">
+        <p class="clock">1&#58;23&#58;30</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
