@@ -13,14 +13,16 @@
       .main {
         max-width: 100%;
         min-height: 100vh;
+
         background: rgb(179, 175, 175);
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
+        display: grid;
+        place-content: center;
       }
       .clock_box {
         width: 400px;
         height: 200px;
+
         background: linear-gradient(
           rgb(223, 137, 137) 0%,
           rgb(245, 155, 92) 30%,
@@ -29,10 +31,12 @@
         );
 
         box-shadow: 10px 10px 9px 1px rgba(0, 0, 0, 0.5);
+
         border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
+        display: grid;
+        place-content: center;
+
         transition: all 2s ease;
       }
       .clock {
